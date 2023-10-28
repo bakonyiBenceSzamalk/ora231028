@@ -1,0 +1,80 @@
+header{
+    grid-area: h;
+    background-image: url('kepek/img/dandelion.jpg');
+    padding-right: 16px;
+}
+
+nav{
+    grid-area: m;
+    background-image: url('kepek/img/dand2.jpg');
+}
+
+aside{
+    grid-area: a;
+    background-image: url('kepek/img/dand3.jpg');
+    padding-right: 16px;
+}
+
+article{
+    grid-area: ar;
+    background-image: url('kepek/img/dandy2.gif');
+    padding-right: 16px;
+}
+
+footer{
+    grid-area: f;
+    background-image: url('kepek/img/dandy.gif');
+    padding-right: 16px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px 10px 0px 0px;
+  }
+  
+li {
+   float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#tartalom{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'h m m'
+    'a f ar'
+    ;
+}
+
+.osszes{    
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 350px;
+    margin: 0.5%;
+    text-align: right;
+    border-radius: 10px;
+    opacity: 0.6;
+}
+
+.osszes:hover{
+    opacity: 1.0;
+}
+
+@media only screen and (max-width: 465px) {
+    #tartalom{
+        display: block;
+    }
+}
